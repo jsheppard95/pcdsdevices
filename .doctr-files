@@ -2833,6 +2833,7 @@
 ./_sources/generated/generated/pcdsdevices.epics_motor.DelayNewport.rst.txt
 ./_sources/generated/generated/pcdsdevices.epics_motor.EpicsMotorInterface.rst.txt
 ./_sources/generated/generated/pcdsdevices.epics_motor.IMS.rst.txt
+./_sources/generated/generated/pcdsdevices.epics_motor.Motor.rst.txt
 ./_sources/generated/generated/pcdsdevices.epics_motor.MotorDisabledError.rst.txt
 ./_sources/generated/generated/pcdsdevices.epics_motor.Newport.rst.txt
 ./_sources/generated/generated/pcdsdevices.epics_motor.PCDSMotorBase.rst.txt
@@ -3003,6 +3004,7 @@
 ./_sources/generated/pcdsdevices.device_types.IMS.rst.txt
 ./_sources/generated/pcdsdevices.device_types.IPM.rst.txt
 ./_sources/generated/pcdsdevices.device_types.LODCM.rst.txt
+./_sources/generated/pcdsdevices.device_types.Motor.rst.txt
 ./_sources/generated/pcdsdevices.device_types.Newport.rst.txt
 ./_sources/generated/pcdsdevices.device_types.OffsetMirror.rst.txt
 ./_sources/generated/pcdsdevices.device_types.PIM.rst.txt
@@ -5930,6 +5932,7 @@
 ./generated/generated/pcdsdevices.epics_motor.DelayNewport.html
 ./generated/generated/pcdsdevices.epics_motor.EpicsMotorInterface.html
 ./generated/generated/pcdsdevices.epics_motor.IMS.html
+./generated/generated/pcdsdevices.epics_motor.Motor.html
 ./generated/generated/pcdsdevices.epics_motor.MotorDisabledError.html
 ./generated/generated/pcdsdevices.epics_motor.Newport.html
 ./generated/generated/pcdsdevices.epics_motor.PCDSMotorBase.html
@@ -6100,6 +6103,7 @@
 ./generated/pcdsdevices.device_types.IMS.html
 ./generated/pcdsdevices.device_types.IPM.html
 ./generated/pcdsdevices.device_types.LODCM.html
+./generated/pcdsdevices.device_types.Motor.html
 ./generated/pcdsdevices.device_types.Newport.html
 ./generated/pcdsdevices.device_types.OffsetMirror.html
 ./generated/pcdsdevices.device_types.PIM.html

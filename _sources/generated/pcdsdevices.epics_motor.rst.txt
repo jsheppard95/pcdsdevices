@@ -5,6 +5,13 @@ pcdsdevices.epics\_motor
 
    
    
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree: generated
+   
+      Motor
+   
    
 
    

@@ -1,0 +1,6 @@
+pcdsdevices.device\_types.Motor
+===============================
+
+.. currentmodule:: pcdsdevices.device_types
+
+.. autofunction:: Motor
