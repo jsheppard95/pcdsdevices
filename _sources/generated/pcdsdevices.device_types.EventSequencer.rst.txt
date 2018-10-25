@@ -70,6 +70,7 @@ pcdsdevices.device\_types.EventSequencer
       ~EventSequencer.rep_count
       ~EventSequencer.report
       ~EventSequencer.root
+      ~EventSequencer.sequence
       ~EventSequencer.sequence_length
       ~EventSequencer.sequence_owner
       ~EventSequencer.signal_names
