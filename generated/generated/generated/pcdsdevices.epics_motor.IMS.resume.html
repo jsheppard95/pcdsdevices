@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>pcdsdevices.epics_motor.IMS.resume &mdash; PCDS Devices 1.0.0+29.g48fbdc7 documentation</title>
+  <title>pcdsdevices.epics_motor.IMS.resume &mdash; PCDS Devices 1.0.0+36.g395615b documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                1.0.0+29.g48fbdc7
+                1.0.0+36.g395615b
               </div>
             
           
@@ -124,7 +124,6 @@
 <li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.IMS.get.html">pcdsdevices.epics_motor.IMS.get</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.IMS.get_device_tuple.html">pcdsdevices.epics_motor.IMS.get_device_tuple</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.IMS.get_instantiated_signals.html">pcdsdevices.epics_motor.IMS.get_instantiated_signals</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.IMS.go.html">pcdsdevices.epics_motor.IMS.go</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.IMS.home.html">pcdsdevices.epics_motor.IMS.home</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.IMS.move.html">pcdsdevices.epics_motor.IMS.move</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.IMS.mv.html">pcdsdevices.epics_motor.IMS.mv</a></li>
@@ -138,6 +137,9 @@
 <li class="toctree-l4 current"><a class="current reference internal" href="#">pcdsdevices.epics_motor.IMS.resume</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.IMS.set.html">pcdsdevices.epics_motor.IMS.set</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.IMS.set_current_position.html">pcdsdevices.epics_motor.IMS.set_current_position</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.IMS.spg_go.html">pcdsdevices.epics_motor.IMS.spg_go</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.IMS.spg_pause.html">pcdsdevices.epics_motor.IMS.spg_pause</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.IMS.spg_stop.html">pcdsdevices.epics_motor.IMS.spg_stop</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.IMS.stage.html">pcdsdevices.epics_motor.IMS.stage</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.IMS.stop.html">pcdsdevices.epics_motor.IMS.stop</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.IMS.subscribe.html">pcdsdevices.epics_motor.IMS.subscribe</a></li>
@@ -253,10 +255,11 @@
 <h1>pcdsdevices.epics_motor.IMS.resume<a class="headerlink" href="#pcdsdevices-epics-motor-ims-resume" title="Permalink to this headline">¶</a></h1>
 <dl class="method">
 <dt id="pcdsdevices.epics_motor.IMS.resume">
-<code class="descclassname">IMS.</code><code class="descname">resume</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pcdsdevices.epics_motor.IMS.resume" title="Permalink to this definition">¶</a></dt>
-<dd><p>Resumes paused movement.</p>
-<p>Sets motor ready to move or resumes a paused move
-(same as &lt;motor&gt;.go()).</p>
+<code class="descclassname">IMS.</code><code class="descname">resume</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#pcdsdevices.epics_motor.IMS.resume" title="Permalink to this definition">¶</a></dt>
+<dd><p>Resume a device from a ‘paused’ state</p>
+<p>This is called by the <code class="xref py py-obj docutils literal notranslate"><span class="pre">bluesky.run_engine.RunEngine</span></code>
+when it resumes from an interruption and is responsible for
+ensuring that the device is ready to take data again.</p>
 </dd></dl>
 
 </div>

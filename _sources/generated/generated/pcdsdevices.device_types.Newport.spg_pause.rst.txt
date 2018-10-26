@@ -1,0 +1,6 @@
+pcdsdevices.device\_types.Newport.spg\_pause
+============================================
+
+.. currentmodule:: pcdsdevices.device_types
+
+.. automethod:: Newport.spg_pause

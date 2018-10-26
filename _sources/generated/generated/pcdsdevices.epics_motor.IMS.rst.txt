@@ -30,7 +30,6 @@ pcdsdevices.epics\_motor.IMS
       ~IMS.get
       ~IMS.get_device_tuple
       ~IMS.get_instantiated_signals
-      ~IMS.go
       ~IMS.home
       ~IMS.move
       ~IMS.mv
@@ -44,6 +43,9 @@ pcdsdevices.epics\_motor.IMS
       ~IMS.resume
       ~IMS.set
       ~IMS.set_current_position
+      ~IMS.spg_go
+      ~IMS.spg_pause
+      ~IMS.spg_stop
       ~IMS.stage
       ~IMS.stop
       ~IMS.subscribe

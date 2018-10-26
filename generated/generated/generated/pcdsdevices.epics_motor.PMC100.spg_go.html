@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>pcdsdevices.epics_motor.Newport.go &mdash; PCDS Devices 1.0.0+29.g48fbdc7 documentation</title>
+  <title>pcdsdevices.epics_motor.PMC100.spg_go &mdash; PCDS Devices 1.0.0+36.g395615b documentation</title>
   
 
   
@@ -28,8 +28,8 @@
   <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="pcdsdevices.epics_motor.Newport.home" href="pcdsdevices.epics_motor.Newport.home.html" />
-    <link rel="prev" title="pcdsdevices.epics_motor.Newport.get_instantiated_signals" href="pcdsdevices.epics_motor.Newport.get_instantiated_signals.html" /> 
+    <link rel="next" title="pcdsdevices.epics_motor.PMC100.spg_pause" href="pcdsdevices.epics_motor.PMC100.spg_pause.html" />
+    <link rel="prev" title="pcdsdevices.epics_motor.PMC100.set_current_position" href="pcdsdevices.epics_motor.PMC100.set_current_position.html" /> 
 
   
   <script src="../../../_static/js/modernizr.min.js"></script>
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                1.0.0+29.g48fbdc7
+                1.0.0+36.g395615b
               </div>
             
           
@@ -106,51 +106,53 @@
 <li class="toctree-l3"><a class="reference internal" href="../pcdsdevices.epics_motor.DelayNewport.html">pcdsdevices.epics_motor.DelayNewport</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../pcdsdevices.epics_motor.EpicsMotorInterface.html">pcdsdevices.epics_motor.EpicsMotorInterface</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../pcdsdevices.epics_motor.IMS.html">pcdsdevices.epics_motor.IMS</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="../pcdsdevices.epics_motor.Newport.html">pcdsdevices.epics_motor.Newport</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.Newport.__init__.html">pcdsdevices.epics_motor.Newport.__init__</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.Newport.camonitor.html">pcdsdevices.epics_motor.Newport.camonitor</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.Newport.check_value.html">pcdsdevices.epics_motor.Newport.check_value</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.Newport.clear_sub.html">pcdsdevices.epics_motor.Newport.clear_sub</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.Newport.configure.html">pcdsdevices.epics_motor.Newport.configure</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.Newport.describe.html">pcdsdevices.epics_motor.Newport.describe</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.Newport.describe_configuration.html">pcdsdevices.epics_motor.Newport.describe_configuration</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.Newport.disable.html">pcdsdevices.epics_motor.Newport.disable</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.Newport.enable.html">pcdsdevices.epics_motor.Newport.enable</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.Newport.end_monitor_thread.html">pcdsdevices.epics_motor.Newport.end_monitor_thread</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.Newport.get.html">pcdsdevices.epics_motor.Newport.get</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.Newport.get_device_tuple.html">pcdsdevices.epics_motor.Newport.get_device_tuple</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.Newport.get_instantiated_signals.html">pcdsdevices.epics_motor.Newport.get_instantiated_signals</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">pcdsdevices.epics_motor.Newport.go</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.Newport.home.html">pcdsdevices.epics_motor.Newport.home</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.Newport.move.html">pcdsdevices.epics_motor.Newport.move</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.Newport.mv.html">pcdsdevices.epics_motor.Newport.mv</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.Newport.mv_ginput.html">pcdsdevices.epics_motor.Newport.mv_ginput</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.Newport.mvr.html">pcdsdevices.epics_motor.Newport.mvr</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.Newport.pause.html">pcdsdevices.epics_motor.Newport.pause</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.Newport.put.html">pcdsdevices.epics_motor.Newport.put</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.Newport.read.html">pcdsdevices.epics_motor.Newport.read</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.Newport.read_configuration.html">pcdsdevices.epics_motor.Newport.read_configuration</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.Newport.resume.html">pcdsdevices.epics_motor.Newport.resume</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.Newport.set.html">pcdsdevices.epics_motor.Newport.set</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.Newport.set_current_position.html">pcdsdevices.epics_motor.Newport.set_current_position</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.Newport.stage.html">pcdsdevices.epics_motor.Newport.stage</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.Newport.stop.html">pcdsdevices.epics_motor.Newport.stop</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.Newport.subscribe.html">pcdsdevices.epics_motor.Newport.subscribe</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.Newport.summary.html">pcdsdevices.epics_motor.Newport.summary</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.Newport.trigger.html">pcdsdevices.epics_motor.Newport.trigger</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.Newport.tweak.html">pcdsdevices.epics_motor.Newport.tweak</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.Newport.umv.html">pcdsdevices.epics_motor.Newport.umv</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.Newport.umvr.html">pcdsdevices.epics_motor.Newport.umvr</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.Newport.unstage.html">pcdsdevices.epics_motor.Newport.unstage</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.Newport.unsubscribe.html">pcdsdevices.epics_motor.Newport.unsubscribe</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.Newport.unsubscribe_all.html">pcdsdevices.epics_motor.Newport.unsubscribe_all</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.Newport.wait_for_connection.html">pcdsdevices.epics_motor.Newport.wait_for_connection</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.Newport.wm.html">pcdsdevices.epics_motor.Newport.wm</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.Newport.wm_update.html">pcdsdevices.epics_motor.Newport.wm_update</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pcdsdevices.epics_motor.Newport.html">pcdsdevices.epics_motor.Newport</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pcdsdevices.epics_motor.PCDSMotorBase.html">pcdsdevices.epics_motor.PCDSMotorBase</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../pcdsdevices.epics_motor.PMC100.html">pcdsdevices.epics_motor.PMC100</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.PMC100.__init__.html">pcdsdevices.epics_motor.PMC100.__init__</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.PMC100.camonitor.html">pcdsdevices.epics_motor.PMC100.camonitor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.PMC100.check_value.html">pcdsdevices.epics_motor.PMC100.check_value</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.PMC100.clear_sub.html">pcdsdevices.epics_motor.PMC100.clear_sub</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.PMC100.configure.html">pcdsdevices.epics_motor.PMC100.configure</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.PMC100.describe.html">pcdsdevices.epics_motor.PMC100.describe</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.PMC100.describe_configuration.html">pcdsdevices.epics_motor.PMC100.describe_configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.PMC100.disable.html">pcdsdevices.epics_motor.PMC100.disable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.PMC100.enable.html">pcdsdevices.epics_motor.PMC100.enable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.PMC100.end_monitor_thread.html">pcdsdevices.epics_motor.PMC100.end_monitor_thread</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.PMC100.get.html">pcdsdevices.epics_motor.PMC100.get</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.PMC100.get_device_tuple.html">pcdsdevices.epics_motor.PMC100.get_device_tuple</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.PMC100.get_instantiated_signals.html">pcdsdevices.epics_motor.PMC100.get_instantiated_signals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.PMC100.home.html">pcdsdevices.epics_motor.PMC100.home</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.PMC100.move.html">pcdsdevices.epics_motor.PMC100.move</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.PMC100.mv.html">pcdsdevices.epics_motor.PMC100.mv</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.PMC100.mv_ginput.html">pcdsdevices.epics_motor.PMC100.mv_ginput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.PMC100.mvr.html">pcdsdevices.epics_motor.PMC100.mvr</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.PMC100.pause.html">pcdsdevices.epics_motor.PMC100.pause</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.PMC100.put.html">pcdsdevices.epics_motor.PMC100.put</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.PMC100.read.html">pcdsdevices.epics_motor.PMC100.read</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.PMC100.read_configuration.html">pcdsdevices.epics_motor.PMC100.read_configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.PMC100.resume.html">pcdsdevices.epics_motor.PMC100.resume</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.PMC100.set.html">pcdsdevices.epics_motor.PMC100.set</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.PMC100.set_current_position.html">pcdsdevices.epics_motor.PMC100.set_current_position</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">pcdsdevices.epics_motor.PMC100.spg_go</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.PMC100.spg_pause.html">pcdsdevices.epics_motor.PMC100.spg_pause</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.PMC100.spg_stop.html">pcdsdevices.epics_motor.PMC100.spg_stop</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.PMC100.stage.html">pcdsdevices.epics_motor.PMC100.stage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.PMC100.stop.html">pcdsdevices.epics_motor.PMC100.stop</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.PMC100.subscribe.html">pcdsdevices.epics_motor.PMC100.subscribe</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.PMC100.summary.html">pcdsdevices.epics_motor.PMC100.summary</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.PMC100.trigger.html">pcdsdevices.epics_motor.PMC100.trigger</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.PMC100.tweak.html">pcdsdevices.epics_motor.PMC100.tweak</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.PMC100.umv.html">pcdsdevices.epics_motor.PMC100.umv</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.PMC100.umvr.html">pcdsdevices.epics_motor.PMC100.umvr</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.PMC100.unstage.html">pcdsdevices.epics_motor.PMC100.unstage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.PMC100.unsubscribe.html">pcdsdevices.epics_motor.PMC100.unsubscribe</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.PMC100.unsubscribe_all.html">pcdsdevices.epics_motor.PMC100.unsubscribe_all</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.PMC100.wait_for_connection.html">pcdsdevices.epics_motor.PMC100.wait_for_connection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.PMC100.wm.html">pcdsdevices.epics_motor.PMC100.wm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.PMC100.wm_update.html">pcdsdevices.epics_motor.PMC100.wm_update</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../pcdsdevices.epics_motor.PCDSMotorBase.html">pcdsdevices.epics_motor.PCDSMotorBase</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../pcdsdevices.epics_motor.PMC100.html">pcdsdevices.epics_motor.PMC100</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../pcdsdevices.epics_motor.MotorDisabledError.html">pcdsdevices.epics_motor.MotorDisabledError</a></li>
 </ul>
 </li>
@@ -222,15 +224,15 @@
         
           <li><a href="../../pcdsdevices.epics_motor.html">pcdsdevices.epics_motor</a> &raquo;</li>
         
-          <li><a href="../pcdsdevices.epics_motor.Newport.html">pcdsdevices.epics_motor.Newport</a> &raquo;</li>
+          <li><a href="../pcdsdevices.epics_motor.PMC100.html">pcdsdevices.epics_motor.PMC100</a> &raquo;</li>
         
-      <li>pcdsdevices.epics_motor.Newport.go</li>
+      <li>pcdsdevices.epics_motor.PMC100.spg_go</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../../_sources/generated/generated/generated/pcdsdevices.epics_motor.Newport.go.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/generated/generated/generated/pcdsdevices.epics_motor.PMC100.spg_go.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -243,14 +245,12 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="pcdsdevices-epics-motor-newport-go">
-<h1>pcdsdevices.epics_motor.Newport.go<a class="headerlink" href="#pcdsdevices-epics-motor-newport-go" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="pcdsdevices-epics-motor-pmc100-spg-go">
+<h1>pcdsdevices.epics_motor.PMC100.spg_go<a class="headerlink" href="#pcdsdevices-epics-motor-pmc100-spg-go" title="Permalink to this headline">¶</a></h1>
 <dl class="method">
-<dt id="pcdsdevices.epics_motor.Newport.go">
-<code class="descclassname">Newport.</code><code class="descname">go</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pcdsdevices.epics_motor.Newport.go" title="Permalink to this definition">¶</a></dt>
+<dt id="pcdsdevices.epics_motor.PMC100.spg_go">
+<code class="descclassname">PMC100.</code><code class="descname">spg_go</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pcdsdevices.epics_motor.PMC100.spg_go" title="Permalink to this definition">¶</a></dt>
 <dd><p>Resumes paused movement.</p>
-<p>Sets motor ready to move or resumes a paused move
-(same as &lt;motor&gt;.resume()).</p>
 </dd></dl>
 
 </div>
@@ -263,10 +263,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="pcdsdevices.epics_motor.Newport.home.html" class="btn btn-neutral float-right" title="pcdsdevices.epics_motor.Newport.home" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="pcdsdevices.epics_motor.PMC100.spg_pause.html" class="btn btn-neutral float-right" title="pcdsdevices.epics_motor.PMC100.spg_pause" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="pcdsdevices.epics_motor.Newport.get_instantiated_signals.html" class="btn btn-neutral" title="pcdsdevices.epics_motor.Newport.get_instantiated_signals" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="pcdsdevices.epics_motor.PMC100.set_current_position.html" class="btn btn-neutral" title="pcdsdevices.epics_motor.PMC100.set_current_position" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

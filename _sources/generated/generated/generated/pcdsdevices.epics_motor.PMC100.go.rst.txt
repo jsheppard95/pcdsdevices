@@ -1,6 +1,0 @@
-pcdsdevices.epics\_motor.PMC100.go
-==================================
-
-.. currentmodule:: pcdsdevices.epics_motor
-
-.. automethod:: PMC100.go

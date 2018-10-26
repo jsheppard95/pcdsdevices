@@ -25,7 +25,6 @@ pcdsdevices.device\_types.PMC100
       ~PMC100.get
       ~PMC100.get_device_tuple
       ~PMC100.get_instantiated_signals
-      ~PMC100.go
       ~PMC100.home
       ~PMC100.move
       ~PMC100.mv
@@ -38,6 +37,9 @@ pcdsdevices.device\_types.PMC100
       ~PMC100.resume
       ~PMC100.set
       ~PMC100.set_current_position
+      ~PMC100.spg_go
+      ~PMC100.spg_pause
+      ~PMC100.spg_stop
       ~PMC100.stage
       ~PMC100.stop
       ~PMC100.subscribe

@@ -1,0 +1,6 @@
+pcdsdevices.device\_types.IMS.spg\_go
+=====================================
+
+.. currentmodule:: pcdsdevices.device_types
+
+.. automethod:: IMS.spg_go

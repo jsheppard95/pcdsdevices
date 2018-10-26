@@ -1,0 +1,6 @@
+pcdsdevices.device\_types.PMC100.spg\_pause
+===========================================
+
+.. currentmodule:: pcdsdevices.device_types
+
+.. automethod:: PMC100.spg_pause

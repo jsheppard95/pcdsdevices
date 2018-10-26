@@ -1,6 +1,6 @@
-pcdsdevices.epics\_motor.PCDSMotorBase.go
+pcdsdevices.epics\_motor.PMC100.spg\_stop
 =========================================
 
 .. currentmodule:: pcdsdevices.epics_motor
 
-.. automethod:: PCDSMotorBase.go
+.. automethod:: PMC100.spg_stop

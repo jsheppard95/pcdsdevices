@@ -1,6 +1,0 @@
-pcdsdevices.epics\_motor.Newport.go
-===================================
-
-.. currentmodule:: pcdsdevices.epics_motor
-
-.. automethod:: Newport.go

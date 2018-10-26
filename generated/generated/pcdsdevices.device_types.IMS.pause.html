@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>pcdsdevices.device_types.IMS.pause &mdash; PCDS Devices 1.0.0+29.g48fbdc7 documentation</title>
+  <title>pcdsdevices.device_types.IMS.pause &mdash; PCDS Devices 1.0.0+36.g395615b documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                1.0.0+29.g48fbdc7
+                1.0.0+36.g395615b
               </div>
             
           
@@ -116,7 +116,6 @@
 <li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.IMS.get.html">pcdsdevices.device_types.IMS.get</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.IMS.get_device_tuple.html">pcdsdevices.device_types.IMS.get_device_tuple</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.IMS.get_instantiated_signals.html">pcdsdevices.device_types.IMS.get_instantiated_signals</a></li>
-<li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.IMS.go.html">pcdsdevices.device_types.IMS.go</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.IMS.home.html">pcdsdevices.device_types.IMS.home</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.IMS.move.html">pcdsdevices.device_types.IMS.move</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.IMS.mv.html">pcdsdevices.device_types.IMS.mv</a></li>
@@ -130,6 +129,9 @@
 <li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.IMS.resume.html">pcdsdevices.device_types.IMS.resume</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.IMS.set.html">pcdsdevices.device_types.IMS.set</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.IMS.set_current_position.html">pcdsdevices.device_types.IMS.set_current_position</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.IMS.spg_go.html">pcdsdevices.device_types.IMS.spg_go</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.IMS.spg_pause.html">pcdsdevices.device_types.IMS.spg_pause</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.IMS.spg_stop.html">pcdsdevices.device_types.IMS.spg_stop</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.IMS.stage.html">pcdsdevices.device_types.IMS.stage</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.IMS.stop.html">pcdsdevices.device_types.IMS.stop</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.IMS.subscribe.html">pcdsdevices.device_types.IMS.subscribe</a></li>
@@ -242,10 +244,23 @@
 <h1>pcdsdevices.device_types.IMS.pause<a class="headerlink" href="#pcdsdevices-device-types-ims-pause" title="Permalink to this headline">¶</a></h1>
 <dl class="method">
 <dt id="pcdsdevices.device_types.IMS.pause">
-<code class="descclassname">IMS.</code><code class="descname">pause</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pcdsdevices.device_types.IMS.pause" title="Permalink to this definition">¶</a></dt>
-<dd><p>Pauses a move.</p>
-<p>Move will resume if &lt;motor&gt;.resume()
-or &lt;motor&gt;.go() are called.</p>
+<code class="descclassname">IMS.</code><code class="descname">pause</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#pcdsdevices.device_types.IMS.pause" title="Permalink to this definition">¶</a></dt>
+<dd><p>Attempt to ‘pause’ the device.</p>
+<p>This is called when ever the
+<code class="xref py py-obj docutils literal notranslate"><span class="pre">RunEngine</span></code> is interrupted.</p>
+<p>A device may have internal state that means plans can not
+safely be re-wound.  This method may: put the device in a
+‘paused’ state and/or raise
+<code class="xref py py-obj docutils literal notranslate"><span class="pre">NoReplayAllowed</span></code> to indicate that
+the plan can not be rewound.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><code class="xref py py-exc docutils literal notranslate"><span class="pre">bluesky.run_engine.NoReplayAllowed</span></code></td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 </div>

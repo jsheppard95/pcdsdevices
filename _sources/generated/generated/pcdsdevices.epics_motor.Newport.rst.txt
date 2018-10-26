@@ -25,7 +25,6 @@ pcdsdevices.epics\_motor.Newport
       ~Newport.get
       ~Newport.get_device_tuple
       ~Newport.get_instantiated_signals
-      ~Newport.go
       ~Newport.home
       ~Newport.move
       ~Newport.mv
@@ -38,6 +37,9 @@ pcdsdevices.epics\_motor.Newport
       ~Newport.resume
       ~Newport.set
       ~Newport.set_current_position
+      ~Newport.spg_go
+      ~Newport.spg_pause
+      ~Newport.spg_stop
       ~Newport.stage
       ~Newport.stop
       ~Newport.subscribe

@@ -25,7 +25,6 @@ pcdsdevices.epics\_motor.PCDSMotorBase
       ~PCDSMotorBase.get
       ~PCDSMotorBase.get_device_tuple
       ~PCDSMotorBase.get_instantiated_signals
-      ~PCDSMotorBase.go
       ~PCDSMotorBase.home
       ~PCDSMotorBase.move
       ~PCDSMotorBase.mv
@@ -38,6 +37,9 @@ pcdsdevices.epics\_motor.PCDSMotorBase
       ~PCDSMotorBase.resume
       ~PCDSMotorBase.set
       ~PCDSMotorBase.set_current_position
+      ~PCDSMotorBase.spg_go
+      ~PCDSMotorBase.spg_pause
+      ~PCDSMotorBase.spg_stop
       ~PCDSMotorBase.stage
       ~PCDSMotorBase.stop
       ~PCDSMotorBase.subscribe

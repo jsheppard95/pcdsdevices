@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>pcdsdevices.device_types.IMS.go &mdash; PCDS Devices 1.0.0+29.g48fbdc7 documentation</title>
+  <title>pcdsdevices.device_types.IMS.spg_go &mdash; PCDS Devices 1.0.0+36.g395615b documentation</title>
   
 
   
@@ -28,8 +28,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="pcdsdevices.device_types.IMS.home" href="pcdsdevices.device_types.IMS.home.html" />
-    <link rel="prev" title="pcdsdevices.device_types.IMS.get_instantiated_signals" href="pcdsdevices.device_types.IMS.get_instantiated_signals.html" /> 
+    <link rel="next" title="pcdsdevices.device_types.IMS.spg_pause" href="pcdsdevices.device_types.IMS.spg_pause.html" />
+    <link rel="prev" title="pcdsdevices.device_types.IMS.set_current_position" href="pcdsdevices.device_types.IMS.set_current_position.html" /> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                1.0.0+29.g48fbdc7
+                1.0.0+36.g395615b
               </div>
             
           
@@ -116,7 +116,6 @@
 <li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.IMS.get.html">pcdsdevices.device_types.IMS.get</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.IMS.get_device_tuple.html">pcdsdevices.device_types.IMS.get_device_tuple</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.IMS.get_instantiated_signals.html">pcdsdevices.device_types.IMS.get_instantiated_signals</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">pcdsdevices.device_types.IMS.go</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.IMS.home.html">pcdsdevices.device_types.IMS.home</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.IMS.move.html">pcdsdevices.device_types.IMS.move</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.IMS.mv.html">pcdsdevices.device_types.IMS.mv</a></li>
@@ -130,6 +129,9 @@
 <li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.IMS.resume.html">pcdsdevices.device_types.IMS.resume</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.IMS.set.html">pcdsdevices.device_types.IMS.set</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.IMS.set_current_position.html">pcdsdevices.device_types.IMS.set_current_position</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">pcdsdevices.device_types.IMS.spg_go</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.IMS.spg_pause.html">pcdsdevices.device_types.IMS.spg_pause</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.IMS.spg_stop.html">pcdsdevices.device_types.IMS.spg_stop</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.IMS.stage.html">pcdsdevices.device_types.IMS.stage</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.IMS.stop.html">pcdsdevices.device_types.IMS.stop</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pcdsdevices.device_types.IMS.subscribe.html">pcdsdevices.device_types.IMS.subscribe</a></li>
@@ -219,13 +221,13 @@
         
           <li><a href="../pcdsdevices.device_types.IMS.html">pcdsdevices.device_types.IMS</a> &raquo;</li>
         
-      <li>pcdsdevices.device_types.IMS.go</li>
+      <li>pcdsdevices.device_types.IMS.spg_go</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/generated/generated/pcdsdevices.device_types.IMS.go.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/generated/generated/pcdsdevices.device_types.IMS.spg_go.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -238,14 +240,12 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="pcdsdevices-device-types-ims-go">
-<h1>pcdsdevices.device_types.IMS.go<a class="headerlink" href="#pcdsdevices-device-types-ims-go" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="pcdsdevices-device-types-ims-spg-go">
+<h1>pcdsdevices.device_types.IMS.spg_go<a class="headerlink" href="#pcdsdevices-device-types-ims-spg-go" title="Permalink to this headline">¶</a></h1>
 <dl class="method">
-<dt id="pcdsdevices.device_types.IMS.go">
-<code class="descclassname">IMS.</code><code class="descname">go</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pcdsdevices.device_types.IMS.go" title="Permalink to this definition">¶</a></dt>
+<dt id="pcdsdevices.device_types.IMS.spg_go">
+<code class="descclassname">IMS.</code><code class="descname">spg_go</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pcdsdevices.device_types.IMS.spg_go" title="Permalink to this definition">¶</a></dt>
 <dd><p>Resumes paused movement.</p>
-<p>Sets motor ready to move or resumes a paused move
-(same as &lt;motor&gt;.resume()).</p>
 </dd></dl>
 
 </div>
@@ -258,10 +258,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="pcdsdevices.device_types.IMS.home.html" class="btn btn-neutral float-right" title="pcdsdevices.device_types.IMS.home" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="pcdsdevices.device_types.IMS.spg_pause.html" class="btn btn-neutral float-right" title="pcdsdevices.device_types.IMS.spg_pause" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="pcdsdevices.device_types.IMS.get_instantiated_signals.html" class="btn btn-neutral" title="pcdsdevices.device_types.IMS.get_instantiated_signals" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="pcdsdevices.device_types.IMS.set_current_position.html" class="btn btn-neutral" title="pcdsdevices.device_types.IMS.set_current_position" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

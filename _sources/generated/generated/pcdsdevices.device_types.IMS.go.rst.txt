@@ -1,6 +1,0 @@
-pcdsdevices.device\_types.IMS.go
-================================
-
-.. currentmodule:: pcdsdevices.device_types
-
-.. automethod:: IMS.go

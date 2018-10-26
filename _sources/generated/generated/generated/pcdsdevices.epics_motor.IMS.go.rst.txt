@@ -1,6 +1,0 @@
-pcdsdevices.epics\_motor.IMS.go
-===============================
-
-.. currentmodule:: pcdsdevices.epics_motor
-
-.. automethod:: IMS.go

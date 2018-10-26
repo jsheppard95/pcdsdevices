@@ -1,0 +1,6 @@
+pcdsdevices.epics\_motor.IMS.spg\_pause
+=======================================
+
+.. currentmodule:: pcdsdevices.epics_motor
+
+.. automethod:: IMS.spg_pause

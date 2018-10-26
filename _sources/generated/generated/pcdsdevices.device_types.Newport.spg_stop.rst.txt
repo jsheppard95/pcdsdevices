@@ -1,0 +1,6 @@
+pcdsdevices.device\_types.Newport.spg\_stop
+===========================================
+
+.. currentmodule:: pcdsdevices.device_types
+
+.. automethod:: Newport.spg_stop

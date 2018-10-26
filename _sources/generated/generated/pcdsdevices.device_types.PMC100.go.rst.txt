@@ -1,6 +1,0 @@
-pcdsdevices.device\_types.PMC100.go
-===================================
-
-.. currentmodule:: pcdsdevices.device_types
-
-.. automethod:: PMC100.go

@@ -1,0 +1,6 @@
+pcdsdevices.epics\_motor.Newport.spg\_stop
+==========================================
+
+.. currentmodule:: pcdsdevices.epics_motor
+
+.. automethod:: Newport.spg_stop

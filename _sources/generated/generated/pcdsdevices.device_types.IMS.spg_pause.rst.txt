@@ -1,0 +1,6 @@
+pcdsdevices.device\_types.IMS.spg\_pause
+========================================
+
+.. currentmodule:: pcdsdevices.device_types
+
+.. automethod:: IMS.spg_pause

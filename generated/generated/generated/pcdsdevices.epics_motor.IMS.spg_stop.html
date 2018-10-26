@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>pcdsdevices.epics_motor.IMS.go &mdash; PCDS Devices 1.0.0+29.g48fbdc7 documentation</title>
+  <title>pcdsdevices.epics_motor.IMS.spg_stop &mdash; PCDS Devices 1.0.0+36.g395615b documentation</title>
   
 
   
@@ -28,8 +28,8 @@
   <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="pcdsdevices.epics_motor.IMS.home" href="pcdsdevices.epics_motor.IMS.home.html" />
-    <link rel="prev" title="pcdsdevices.epics_motor.IMS.get_instantiated_signals" href="pcdsdevices.epics_motor.IMS.get_instantiated_signals.html" /> 
+    <link rel="next" title="pcdsdevices.epics_motor.IMS.stage" href="pcdsdevices.epics_motor.IMS.stage.html" />
+    <link rel="prev" title="pcdsdevices.epics_motor.IMS.spg_pause" href="pcdsdevices.epics_motor.IMS.spg_pause.html" /> 
 
   
   <script src="../../../_static/js/modernizr.min.js"></script>
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                1.0.0+29.g48fbdc7
+                1.0.0+36.g395615b
               </div>
             
           
@@ -124,7 +124,6 @@
 <li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.IMS.get.html">pcdsdevices.epics_motor.IMS.get</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.IMS.get_device_tuple.html">pcdsdevices.epics_motor.IMS.get_device_tuple</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.IMS.get_instantiated_signals.html">pcdsdevices.epics_motor.IMS.get_instantiated_signals</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">pcdsdevices.epics_motor.IMS.go</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.IMS.home.html">pcdsdevices.epics_motor.IMS.home</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.IMS.move.html">pcdsdevices.epics_motor.IMS.move</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.IMS.mv.html">pcdsdevices.epics_motor.IMS.mv</a></li>
@@ -138,6 +137,9 @@
 <li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.IMS.resume.html">pcdsdevices.epics_motor.IMS.resume</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.IMS.set.html">pcdsdevices.epics_motor.IMS.set</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.IMS.set_current_position.html">pcdsdevices.epics_motor.IMS.set_current_position</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.IMS.spg_go.html">pcdsdevices.epics_motor.IMS.spg_go</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.IMS.spg_pause.html">pcdsdevices.epics_motor.IMS.spg_pause</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">pcdsdevices.epics_motor.IMS.spg_stop</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.IMS.stage.html">pcdsdevices.epics_motor.IMS.stage</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.IMS.stop.html">pcdsdevices.epics_motor.IMS.stop</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pcdsdevices.epics_motor.IMS.subscribe.html">pcdsdevices.epics_motor.IMS.subscribe</a></li>
@@ -230,13 +232,13 @@
         
           <li><a href="../pcdsdevices.epics_motor.IMS.html">pcdsdevices.epics_motor.IMS</a> &raquo;</li>
         
-      <li>pcdsdevices.epics_motor.IMS.go</li>
+      <li>pcdsdevices.epics_motor.IMS.spg_stop</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../../_sources/generated/generated/generated/pcdsdevices.epics_motor.IMS.go.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/generated/generated/generated/pcdsdevices.epics_motor.IMS.spg_stop.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -249,14 +251,14 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="pcdsdevices-epics-motor-ims-go">
-<h1>pcdsdevices.epics_motor.IMS.go<a class="headerlink" href="#pcdsdevices-epics-motor-ims-go" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="pcdsdevices-epics-motor-ims-spg-stop">
+<h1>pcdsdevices.epics_motor.IMS.spg_stop<a class="headerlink" href="#pcdsdevices-epics-motor-ims-spg-stop" title="Permalink to this headline">¶</a></h1>
 <dl class="method">
-<dt id="pcdsdevices.epics_motor.IMS.go">
-<code class="descclassname">IMS.</code><code class="descname">go</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pcdsdevices.epics_motor.IMS.go" title="Permalink to this definition">¶</a></dt>
-<dd><p>Resumes paused movement.</p>
-<p>Sets motor ready to move or resumes a paused move
-(same as &lt;motor&gt;.resume()).</p>
+<dt id="pcdsdevices.epics_motor.IMS.spg_stop">
+<code class="descclassname">IMS.</code><code class="descname">spg_stop</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pcdsdevices.epics_motor.IMS.spg_stop" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stops the motor.</p>
+<p>After which the motor must be set back to ‘go’ via &lt;motor&gt;.spg_go() in
+order to move again.</p>
 </dd></dl>
 
 </div>
@@ -269,10 +271,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="pcdsdevices.epics_motor.IMS.home.html" class="btn btn-neutral float-right" title="pcdsdevices.epics_motor.IMS.home" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="pcdsdevices.epics_motor.IMS.stage.html" class="btn btn-neutral float-right" title="pcdsdevices.epics_motor.IMS.stage" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="pcdsdevices.epics_motor.IMS.get_instantiated_signals.html" class="btn btn-neutral" title="pcdsdevices.epics_motor.IMS.get_instantiated_signals" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="pcdsdevices.epics_motor.IMS.spg_pause.html" class="btn btn-neutral" title="pcdsdevices.epics_motor.IMS.spg_pause" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

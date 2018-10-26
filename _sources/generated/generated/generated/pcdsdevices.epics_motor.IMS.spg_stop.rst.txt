@@ -1,0 +1,6 @@
+pcdsdevices.epics\_motor.IMS.spg\_stop
+======================================
+
+.. currentmodule:: pcdsdevices.epics_motor
+
+.. automethod:: IMS.spg_stop
