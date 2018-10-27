@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Release History &mdash; PCDS Devices 1.0.0+36.g395615b documentation</title>
+  <title>Release History &mdash; PCDS Devices 1.0.0+38.ged80e84 documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                1.0.0+36.g395615b
+                1.0.0+38.ged80e84
               </div>
             
           
@@ -96,26 +96,31 @@
 <p class="caption"><span class="caption-text">Developer Notes</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Release History</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#v1-0-0-2018-10-12">v1.0.0 (2018-10-12)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#v1-1-0-2018-10-26">v1.1.0 (2018-10-26)</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#features">Features</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#bugfixes">Bugfixes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#v1-0-0-2018-10-12">v1.0.0 (2018-10-12)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Bugfixes</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#maintenance">Maintenance</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#api-breaks">API Breaks</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#v0-8-0-2018-05-27">v0.8.0 (2018-05-27)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id1">Features</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id2">Bugfixes</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#v0-7-0-2018-05-08">v0.7.0 (2018-05-08)</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id3">Features</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id4">Bugfixes</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#v0-6-0-2018-04-05">v0.6.0 (2018-04-05)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#v0-7-0-2018-05-08">v0.7.0 (2018-05-08)</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id5">Features</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id6">Bugfixes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#v0-6-0-2018-04-05">v0.6.0 (2018-04-05)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id7">Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id8">Bugfixes</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#ci">CI</a></li>
 </ul>
 </li>
@@ -192,10 +197,33 @@
             
   <div class="section" id="release-history">
 <h1>Release History<a class="headerlink" href="#release-history" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="v1-0-0-2018-10-12">
-<h2>v1.0.0 (2018-10-12)<a class="headerlink" href="#v1-0-0-2018-10-12" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="v1-1-0-2018-10-26">
+<h2>v1.1.0 (2018-10-26)<a class="headerlink" href="#v1-1-0-2018-10-26" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="features">
 <h3>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Support for reading and writing sequences to and from the <code class="docutils literal notranslate"><span class="pre">EventSequencer</span></code></li>
+<li>Add <code class="docutils literal notranslate"><span class="pre">Motor</span></code> factory function for choosing which motor class to use based
+on the text in the <code class="docutils literal notranslate"><span class="pre">prefix</span></code>.</li>
+</ul>
+</div>
+<div class="section" id="bugfixes">
+<h3>Bugfixes<a class="headerlink" href="#bugfixes" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">IMS</span></code> class will no longer get its <code class="docutils literal notranslate"><span class="pre">.SPG</span></code> field stuck on <code class="docutils literal notranslate"><span class="pre">paused</span></code> or
+<code class="docutils literal notranslate"><span class="pre">stopped</span></code> when a scan is interrupted. Scans will start even if these
+fields are blocked.</li>
+<li>Update out-of-date <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> file for <code class="docutils literal notranslate"><span class="pre">pip</span></code></li>
+<li>Pin <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> to <code class="docutils literal notranslate"><span class="pre">&lt;3</span></code> to avoid import incompatibility pitfalls, and
+confine the <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> imports to function scope instead of module scope
+to avoid having a backend be set on import.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="v1-0-0-2018-10-12">
+<h2>v1.0.0 (2018-10-12)<a class="headerlink" href="#v1-0-0-2018-10-12" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>Features<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>Display current position in <code class="docutils literal notranslate"><span class="pre">umv</span></code> progress bars</li>
 <li>Added <code class="docutils literal notranslate"><span class="pre">ophyd</span></code> <code class="docutils literal notranslate"><span class="pre">Kind</span></code> specification to every device in the library</li>
@@ -219,8 +247,8 @@ useful in scans</li>
 applications</li>
 </ul>
 </div>
-<div class="section" id="bugfixes">
-<h3>Bugfixes<a class="headerlink" href="#bugfixes" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id2">
+<h3>Bugfixes<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>Use <code class="docutils literal notranslate"><span class="pre">IMAGE2</span></code> instead of <code class="docutils literal notranslate"><span class="pre">IMAGE1</span></code> as the area detector default, because
 this is the low rate or binned image. Avoid sending huge images quickly
@@ -258,8 +286,8 @@ subclassed.</li>
 </div>
 <div class="section" id="v0-8-0-2018-05-27">
 <h2>v0.8.0 (2018-05-27)<a class="headerlink" href="#v0-8-0-2018-05-27" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id1">
-<h3>Features<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id3">
+<h3>Features<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>Added <a class="reference internal" href="generated/generated/pcdsdevices.signal.AvgSignal.html#pcdsdevices.signal.AvgSignal" title="pcdsdevices.signal.AvgSignal"><code class="xref any py py-class docutils literal notranslate"><span class="pre">AvgSignal</span></code></a> class. This can be used when you want to
 run a callback on a rolling average of a <code class="docutils literal notranslate"><span class="pre">Signal</span></code>. (#227)</li>
@@ -267,8 +295,8 @@ run a callback on a rolling average of a <code class="docutils literal notransla
 <li>Implemented motor <code class="xref any docutils literal notranslate"><span class="pre">.SPG</span></code> field from LCLS motor record into PCDSMotorBase (#236)</li>
 </ul>
 </div>
-<div class="section" id="id2">
-<h3>Bugfixes<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id4">
+<h3>Bugfixes<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>Fix a bug where the <a class="reference internal" href="generated/generated/pcdsdevices.lodcm.LODCM.html#pcdsdevices.lodcm.LODCM" title="pcdsdevices.lodcm.LODCM"><code class="xref any py py-class docutils literal notranslate"><span class="pre">LODCM</span></code></a> class had a <code class="docutils literal notranslate"><span class="pre">readback</span></code> signal with an invalid PV. (#232)</li>
 <li>Fix a bug where the tests would never pass, ever (#238)</li>
@@ -277,8 +305,8 @@ run a callback on a rolling average of a <code class="docutils literal notransla
 </div>
 <div class="section" id="v0-7-0-2018-05-08">
 <h2>v0.7.0 (2018-05-08)<a class="headerlink" href="#v0-7-0-2018-05-08" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id3">
-<h3>Features<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id5">
+<h3>Features<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>Revamp states handling for devices like IPM and XFLS (#205)</li>
 <li>Add a <a class="reference internal" href="generated/generated/pcdsdevices.beam_stats.BeamStats.html#pcdsdevices.beam_stats.BeamStats" title="pcdsdevices.beam_stats.BeamStats"><code class="xref any py py-class docutils literal notranslate"><span class="pre">BeamStats</span></code></a> class (#200)</li>
@@ -286,8 +314,8 @@ run a callback on a rolling average of a <code class="docutils literal notransla
 <li>Add <code class="docutils literal notranslate"><span class="pre">DISP</span></code> field to <a class="reference internal" href="generated/generated/pcdsdevices.epics_motor.PCDSMotorBase.html#pcdsdevices.epics_motor.PCDSMotorBase" title="pcdsdevices.epics_motor.PCDSMotorBase"><code class="xref any py py-class docutils literal notranslate"><span class="pre">PCDSMotorBase</span></code></a> (#192)</li>
 </ul>
 </div>
-<div class="section" id="id4">
-<h3>Bugfixes<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id6">
+<h3>Bugfixes<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>Fix a bug where preset saving could break the session if passed bad arguments (#218)</li>
 <li>Fix a bug where malformed states could fail silently or cryptically (#216)</li>
@@ -298,8 +326,8 @@ run a callback on a rolling average of a <code class="docutils literal notransla
 </div>
 <div class="section" id="v0-6-0-2018-04-05">
 <h2>v0.6.0 (2018-04-05)<a class="headerlink" href="#v0-6-0-2018-04-05" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id5">
-<h3>Features<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id7">
+<h3>Features<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>Improved documentation (#170)</li>
 <li>Recreated the presets feature from existing hutch_python deployments.
@@ -308,8 +336,8 @@ the <a class="reference internal" href="generated/generated/pcdsdevices.mv_inter
 important experimental motor positions that are too dynamic to place in EPICS. (#187)</li>
 </ul>
 </div>
-<div class="section" id="id6">
-<h3>Bugfixes<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id8">
+<h3>Bugfixes<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>Fixed a rare race condition in the testing suite (#189)</li>
 </ul>
