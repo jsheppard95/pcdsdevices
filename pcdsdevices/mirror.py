@@ -323,3 +323,13 @@ class XOffsetMirror(Device, BaseInterface):
     pitch_enc_rms = Cpt(PytmcSignal, ':ENC:PITCH:RMS', io='i', kind='normal')
     bender_enc_rms = Cpt(PytmcSignal, ':ENC:BENDER:RMS', io='i',
                          kind='normal')
+
+    def __init__(self, prefix, x_mot_sep_m=1.0, **kwargs):
+        # Include gantry with pitch readback
+        # Gantry = Upstream - Downstream, +Pitch = ccw rot. about y axis
+        # In LCLS coordiates: Gantry < 0 -> Positive Pitch rotation, need a minus sign
+        # pitch[urad] = gantry[um] / x_mot_sep[m]
+        self.x_mot_sep_m = x_mot_sep_m
+        self.pitch_from_gantry = -self.gantry_x.get() / x_mot_sep_m
+        self.act_pitch_pos = self.pitch.user_readback.get() + self.pitch_from_gantry
+        super().__init__(prefix, **kwargs)
